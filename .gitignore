@@ -1,1 +1,7 @@
-venv/*
+# project ignore
+.venv/*
+.vscode/*
+.idea/*
+
+*.xml
+*.pyc
