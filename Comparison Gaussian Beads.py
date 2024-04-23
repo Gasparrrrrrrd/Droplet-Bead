@@ -77,7 +77,7 @@ x = np.linspace(mean - 3 * std, mean + 3 * std, 1000)
 y = gaussian(x)
 
 # Plot the function
-plt.plot(x, y, label='Manufacturer Bead Diameter', color='')
+plt.plot(x, y, label='Manufacturer Bead Diameter', color='darkorange')
 
 kde = gaussian_kde(bead_45um_radius)
 
@@ -85,9 +85,9 @@ kde = gaussian_kde(bead_45um_radius)
 x_eval=np.arange(1,9,step=1/1000)
 print(x_eval)
 plt.plot(x_eval, kde(x_eval),label='PDF of Fit',color='blue')
-plt.ylabel('Value')
+plt.ylabel('Frequency (normalised)')
 plt.xlabel('Bead Diameter (μm)')
-plt.title('Probability Density Function')
+plt.title('Normalised Density Function')
 plt.gca().set_ylim(0, 1)
 
 bead_45um_radius = np.array(bead_45um_radius.to_numpy())
