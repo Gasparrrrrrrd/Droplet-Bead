@@ -2,10 +2,10 @@ from FunctionFitPlot import *
 
 from FunctionsFit import *
 
-bead_experiment = 4.5/2 ######## we want the radius
+bead_experiment = 4.5/2 ######## we want the radius of a 4.5um bead
 want_to_plot = "yes"
 details_of_fit = "yes"
-### Put your points and radii here:
+### Put your points and radii here, an example of imageJ macro output is given below:
 data =[
 [ 4.9600, 4.4800, 4.3200, 4, 3.5200],
 [7.52, 7.2, 4.5],
